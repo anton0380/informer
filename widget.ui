@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Informer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/icons/icon.png</normaloff>:/images/icons/icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tabScreen">
+      <attribute name="title">
+       <string>Скриншоты</string>
+      </attribute>
+      <widget class="QPushButton" name="screenshotButton">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Сделать скриншот</string>
+       </property>
+       <property name="text">
+        <string>Скриншот</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="alwaysCheckBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>151</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Сохранять по таймауту</string>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="delaySpinBox">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>42</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>6</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Таймаут скриншота</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>50</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>сек</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabMessage">
+      <attribute name="title">
+       <string>Сообщения</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="messageLayout"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabWeb">
+      <attribute name="title">
+       <string>Сеть</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tabCalc">
+      <attribute name="title">
+       <string>Расчеты</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
